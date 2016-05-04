@@ -7,8 +7,8 @@ class Translator
   FRENCH = { "hello" => "bonjour" }
   GERMAN = { "hello" => "hallo" }
 
-  def translate(english)
-    self.class.const_get(language.upcase)[english]
+  def translate(english_word)
+    self.class.const_get(language.upcase)[english_word]
   end
 
   private
